@@ -6,11 +6,31 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            ZStack{
+                MapView(coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), name: "nothing")
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                    .edgesIgnoringSafeArea(.all)
+                VStack{
+                    Spacer()
+                    NavigationLink(
+                        destination: ScanView(),
+                        label: {
+                            Text("Scan to Ride")
+                                .padding()
+                                .font(.largeTitle)
+                                .foregroundColor(.pink)
+                                .background(Color.black)
+                                .cornerRadius(50)
+                        })
+                }
+                
+            }
+        }
     }
 }
 

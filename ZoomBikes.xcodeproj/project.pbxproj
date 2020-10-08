@@ -11,7 +11,44 @@
 		79CD13A3252958060025C70A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13A2252958060025C70A /* ContentView.swift */; };
 		79CD13A52529580F0025C70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CD13A42529580F0025C70A /* Assets.xcassets */; };
 		79CD13A82529580F0025C70A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CD13A72529580F0025C70A /* Preview Assets.xcassets */; };
+		79CD13B425296FA10025C70A /* BikesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13B325296FA10025C70A /* BikesDetail.swift */; };
+		79CD13B62529754F0025C70A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13B52529754F0025C70A /* MapView.swift */; };
+		79CD13B8252B98E20025C70A /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13B7252B98E20025C70A /* ScanView.swift */; };
+		79CD13C0252BAEB90025C70A /* ZoomBikesAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13BF252BAEB90025C70A /* ZoomBikesAppClipApp.swift */; };
+		79CD13C2252BAEB90025C70A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13C1252BAEB90025C70A /* ContentView.swift */; };
+		79CD13C4252BAEBB0025C70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CD13C3252BAEBB0025C70A /* Assets.xcassets */; };
+		79CD13C7252BAEBB0025C70A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CD13C6252BAEBB0025C70A /* Preview Assets.xcassets */; };
+		79CD13CC252BAEBB0025C70A /* ZoomBikesAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 79CD13BD252BAEB90025C70A /* ZoomBikesAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		79CD13D2252BAF270025C70A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D1252BAF270025C70A /* MapView.swift */; };
+		79CD13D6252BB0180025C70A /* SafetyInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D5252BB0180025C70A /* SafetyInstructions.swift */; };
+		79CD13D8252BB6DA0025C70A /* LaunchingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */; };
+		79CD13DA252BBF1C0025C70A /* MapViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D9252BBF1C0025C70A /* MapViewer.swift */; };
+		79CD13DC252BC6B30025C70A /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13DB252BC6B30025C70A /* PayView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79CD13CA252BAEBB0025C70A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79CD1395252958060025C70A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79CD13BC252BAEB90025C70A;
+			remoteInfo = ZoomBikesAppClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79CD13D0252BAEBB0025C70A /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				79CD13CC252BAEBB0025C70A /* ZoomBikesAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		79CD139D252958060025C70A /* ZoomBikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomBikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +57,32 @@
 		79CD13A42529580F0025C70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79CD13A72529580F0025C70A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79CD13A92529580F0025C70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CD13B325296FA10025C70A /* BikesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesDetail.swift; sourceTree = "<group>"; };
+		79CD13B52529754F0025C70A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		79CD13B7252B98E20025C70A /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		79CD13BD252BAEB90025C70A /* ZoomBikesAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomBikesAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CD13BF252BAEB90025C70A /* ZoomBikesAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomBikesAppClipApp.swift; sourceTree = "<group>"; };
+		79CD13C1252BAEB90025C70A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79CD13C3252BAEBB0025C70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79CD13C6252BAEBB0025C70A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79CD13C8252BAEBB0025C70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CD13C9252BAEBB0025C70A /* ZoomBikesAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomBikesAppClip.entitlements; sourceTree = "<group>"; };
+		79CD13D1252BAF270025C70A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		79CD13D5252BB0180025C70A /* SafetyInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyInstructions.swift; sourceTree = "<group>"; };
+		79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingPage.swift; sourceTree = "<group>"; };
+		79CD13D9252BBF1C0025C70A /* MapViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewer.swift; sourceTree = "<group>"; };
+		79CD13DB252BC6B30025C70A /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		79CD139A252958060025C70A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CD13BA252BAEB90025C70A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				79CD139F252958060025C70A /* ZoomBikes */,
+				79CD13BE252BAEB90025C70A /* ZoomBikesAppClip */,
 				79CD139E252958060025C70A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				79CD139D252958060025C70A /* ZoomBikes.app */,
+				79CD13BD252BAEB90025C70A /* ZoomBikesAppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +118,9 @@
 				79CD13A42529580F0025C70A /* Assets.xcassets */,
 				79CD13A92529580F0025C70A /* Info.plist */,
 				79CD13A62529580F0025C70A /* Preview Content */,
+				79CD13B325296FA10025C70A /* BikesDetail.swift */,
+				79CD13B52529754F0025C70A /* MapView.swift */,
+				79CD13B7252B98E20025C70A /* ScanView.swift */,
 			);
 			path = ZoomBikes;
 			sourceTree = "<group>";
@@ -65,6 +129,32 @@
 			isa = PBXGroup;
 			children = (
 				79CD13A72529580F0025C70A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79CD13BE252BAEB90025C70A /* ZoomBikesAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				79CD13BF252BAEB90025C70A /* ZoomBikesAppClipApp.swift */,
+				79CD13C1252BAEB90025C70A /* ContentView.swift */,
+				79CD13C3252BAEBB0025C70A /* Assets.xcassets */,
+				79CD13C8252BAEBB0025C70A /* Info.plist */,
+				79CD13C9252BAEBB0025C70A /* ZoomBikesAppClip.entitlements */,
+				79CD13C5252BAEBB0025C70A /* Preview Content */,
+				79CD13D1252BAF270025C70A /* MapView.swift */,
+				79CD13D5252BB0180025C70A /* SafetyInstructions.swift */,
+				79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */,
+				79CD13D9252BBF1C0025C70A /* MapViewer.swift */,
+				79CD13DB252BC6B30025C70A /* PayView.swift */,
+			);
+			path = ZoomBikesAppClip;
+			sourceTree = "<group>";
+		};
+		79CD13C5252BAEBB0025C70A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				79CD13C6252BAEBB0025C70A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,15 +169,34 @@
 				79CD1399252958060025C70A /* Sources */,
 				79CD139A252958060025C70A /* Frameworks */,
 				79CD139B252958060025C70A /* Resources */,
+				79CD13D0252BAEBB0025C70A /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				79CD13CB252BAEBB0025C70A /* PBXTargetDependency */,
 			);
 			name = ZoomBikes;
 			productName = ZoomBikes;
 			productReference = 79CD139D252958060025C70A /* ZoomBikes.app */;
 			productType = "com.apple.product-type.application";
+		};
+		79CD13BC252BAEB90025C70A /* ZoomBikesAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CD13CD252BAEBB0025C70A /* Build configuration list for PBXNativeTarget "ZoomBikesAppClip" */;
+			buildPhases = (
+				79CD13B9252BAEB90025C70A /* Sources */,
+				79CD13BA252BAEB90025C70A /* Frameworks */,
+				79CD13BB252BAEB90025C70A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomBikesAppClip;
+			productName = ZoomBikesAppClip;
+			productReference = 79CD13BD252BAEB90025C70A /* ZoomBikesAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +208,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					79CD139C252958060025C70A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					79CD13BC252BAEB90025C70A = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -117,6 +229,7 @@
 			projectRoot = "";
 			targets = (
 				79CD139C252958060025C70A /* ZoomBikes */,
+				79CD13BC252BAEB90025C70A /* ZoomBikesAppClip */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +244,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79CD13BB252BAEB90025C70A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CD13C7252BAEBB0025C70A /* Preview Assets.xcassets in Resources */,
+				79CD13C4252BAEBB0025C70A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,11 +261,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CD13A3252958060025C70A /* ContentView.swift in Sources */,
+				79CD13B62529754F0025C70A /* MapView.swift in Sources */,
+				79CD13B8252B98E20025C70A /* ScanView.swift in Sources */,
 				79CD13A1252958060025C70A /* ZoomBikesApp.swift in Sources */,
+				79CD13B425296FA10025C70A /* BikesDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CD13B9252BAEB90025C70A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CD13DC252BC6B30025C70A /* PayView.swift in Sources */,
+				79CD13DA252BBF1C0025C70A /* MapViewer.swift in Sources */,
+				79CD13D6252BB0180025C70A /* SafetyInstructions.swift in Sources */,
+				79CD13C2252BAEB90025C70A /* ContentView.swift in Sources */,
+				79CD13D2252BAF270025C70A /* MapView.swift in Sources */,
+				79CD13C0252BAEB90025C70A /* ZoomBikesAppClipApp.swift in Sources */,
+				79CD13D8252BB6DA0025C70A /* LaunchingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79CD13CB252BAEBB0025C70A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79CD13BC252BAEB90025C70A /* ZoomBikesAppClip */;
+			targetProxy = 79CD13CA252BAEBB0025C70A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		79CD13AA2529580F0025C70A /* Debug */ = {
@@ -265,6 +412,7 @@
 		79CD13AD2529580F0025C70A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +434,7 @@
 		79CD13AE2529580F0025C70A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +447,50 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = siminsavani.ZoomBikes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79CD13CE252BAEBB0025C70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomBikesAppClip/ZoomBikesAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ZoomBikesAppClip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZoomBikesAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = siminsavani.ZoomBikes.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79CD13CF252BAEBB0025C70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomBikesAppClip/ZoomBikesAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ZoomBikesAppClip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZoomBikesAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = siminsavani.ZoomBikes.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,6 +514,15 @@
 			buildConfigurations = (
 				79CD13AD2529580F0025C70A /* Debug */,
 				79CD13AE2529580F0025C70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CD13CD252BAEBB0025C70A /* Build configuration list for PBXNativeTarget "ZoomBikesAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CD13CE252BAEBB0025C70A /* Debug */,
+				79CD13CF252BAEBB0025C70A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
