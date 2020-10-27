@@ -8,7 +8,9 @@
 import SwiftUI
 import MapKit
 
-struct PayView: View {
+struct RideView: View {
+    @ObservedObject var stopWatchManager = StopWatchManager()
+    
     var body: some View {
         // NavigationView{
             ZStack{
@@ -20,7 +22,7 @@ struct PayView: View {
                     VStack{
                         HStack{
                             Text("")
-                            Text("Payment")
+                            Text("Ride")
                                 .font(.largeTitle)
                                 .foregroundColor(Color("pink"))
                         }
@@ -57,7 +59,34 @@ struct PayView: View {
                             }
                             
                         }
-                    link(label: " Pay", destination: ApplePayView())
+                        
+                        HStack {
+                            ZStack {
+                                HStack{
+                                        Text("")
+                                            .font(.title)
+                                            .font(.largeTitle)
+                                            .foregroundColor(.white)
+                                }.onAppear(perform: {self.stopWatchManager.start()})
+                                .padding(.all, 30)
+                                .padding(.horizontal, 50)
+                                .background(Color("pink"))
+                                .cornerRadius(50)
+                            
+                                HStack{
+                                        Text(String(format: "%.2f", stopWatchManager.secondsElapsed/60))
+                                            .font(.title)
+                                            .font(.largeTitle)
+                                            .foregroundColor(.white)
+                                }
+                                .padding(.vertical, 20)
+                                .padding(.horizontal, 30)
+                                .background(Color("pink"))
+                                .cornerRadius(50)
+                            }
+                            
+                            link(label: "End", destination: SummaryView(stopWatchManager: self.stopWatchManager))
+                        }
                     }
                     
                     .padding(.vertical, 50)
@@ -71,24 +100,41 @@ struct PayView: View {
     //} nav view
     private func link<Destination: View>(label: String, destination: Destination) -> some View {
             return NavigationLink(destination: destination) {
-                HStack{
-                    Image("apple")
-                    Text(" Pay")
-                        .font(.title)
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
+                
+                ZStack {
+                    HStack{
+                            Text("End")
+                                .font(.title)
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                    }.onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
+                        self.stopWatchManager.stop()
+                    })
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 20)
+                    .padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .background(Color("pink"))
+                    .cornerRadius(50)
+                    
+                    HStack{
+                        Text(label)
+                            .font(.title)
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                    }
+                    .padding()
+                    .padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .background(Color.black)
+                    .cornerRadius(50)
                 }
-                .padding(.horizontal, 20)
-                .padding()
-                .background(Color("pink"))
-                .cornerRadius(50)
+                
                 }
             }
-
 }
 
-struct PayView_Previews: PreviewProvider {
+
+
+struct RideView_Previews: PreviewProvider {
     static var previews: some View {
-        PayView()
+        RideView()
     }
 }

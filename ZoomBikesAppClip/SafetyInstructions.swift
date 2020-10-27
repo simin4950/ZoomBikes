@@ -52,8 +52,8 @@ struct SafetyInstructions: View {
                                     .padding()
                                     .padding(.horizontal, 50)
                                     .font(.largeTitle)
-                                    .foregroundColor(.black)
-                                    .background(Color.pink)
+                                    .foregroundColor(.white)
+                                    .background(Color("pink"))
                                     .cornerRadius(50)
                             })
                     }

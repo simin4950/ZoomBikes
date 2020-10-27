@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797D35C3254898F800A8CB13 /* ApplePayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D35C2254898F800A8CB13 /* ApplePayView.swift */; };
 		79CD13A1252958060025C70A /* ZoomBikesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13A0252958060025C70A /* ZoomBikesApp.swift */; };
 		79CD13A3252958060025C70A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13A2252958060025C70A /* ContentView.swift */; };
 		79CD13A52529580F0025C70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CD13A42529580F0025C70A /* Assets.xcassets */; };
@@ -24,6 +25,10 @@
 		79CD13D8252BB6DA0025C70A /* LaunchingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */; };
 		79CD13DA252BBF1C0025C70A /* MapViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D9252BBF1C0025C70A /* MapViewer.swift */; };
 		79CD13DC252BC6B30025C70A /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13DB252BC6B30025C70A /* PayView.swift */; };
+		79CF34F12547A83700ACC13C /* RideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF34F02547A83700ACC13C /* RideView.swift */; };
+		79CF34F32547B41F00ACC13C /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF34F22547B41F00ACC13C /* StopWatchManager.swift */; };
+		79CF34F52547B8D500ACC13C /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF34F42547B8D500ACC13C /* SummaryView.swift */; };
+		79CF34F72547C4CD00ACC13C /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF34F62547C4CD00ACC13C /* EndView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		797D35C2254898F800A8CB13 /* ApplePayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayView.swift; sourceTree = "<group>"; };
 		79CD139D252958060025C70A /* ZoomBikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomBikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CD13A0252958060025C70A /* ZoomBikesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomBikesApp.swift; sourceTree = "<group>"; };
 		79CD13A2252958060025C70A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,11 @@
 		79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingPage.swift; sourceTree = "<group>"; };
 		79CD13D9252BBF1C0025C70A /* MapViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewer.swift; sourceTree = "<group>"; };
 		79CD13DB252BC6B30025C70A /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		79CF34EF25474D0F00ACC13C /* ZoomBikes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomBikes.entitlements; sourceTree = "<group>"; };
+		79CF34F02547A83700ACC13C /* RideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideView.swift; sourceTree = "<group>"; };
+		79CF34F22547B41F00ACC13C /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
+		79CF34F42547B8D500ACC13C /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		79CF34F62547C4CD00ACC13C /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +124,7 @@
 		79CD139F252958060025C70A /* ZoomBikes */ = {
 			isa = PBXGroup;
 			children = (
+				79CF34EF25474D0F00ACC13C /* ZoomBikes.entitlements */,
 				79CD13A0252958060025C70A /* ZoomBikesApp.swift */,
 				79CD13A2252958060025C70A /* ContentView.swift */,
 				79CD13A42529580F0025C70A /* Assets.xcassets */,
@@ -143,10 +155,15 @@
 				79CD13C9252BAEBB0025C70A /* ZoomBikesAppClip.entitlements */,
 				79CD13C5252BAEBB0025C70A /* Preview Content */,
 				79CD13D1252BAF270025C70A /* MapView.swift */,
-				79CD13D5252BB0180025C70A /* SafetyInstructions.swift */,
 				79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */,
+				79CD13D5252BB0180025C70A /* SafetyInstructions.swift */,
 				79CD13D9252BBF1C0025C70A /* MapViewer.swift */,
 				79CD13DB252BC6B30025C70A /* PayView.swift */,
+				79CF34F02547A83700ACC13C /* RideView.swift */,
+				79CF34F22547B41F00ACC13C /* StopWatchManager.swift */,
+				79CF34F42547B8D500ACC13C /* SummaryView.swift */,
+				797D35C2254898F800A8CB13 /* ApplePayView.swift */,
+				79CF34F62547C4CD00ACC13C /* EndView.swift */,
 			);
 			path = ZoomBikesAppClip;
 			sourceTree = "<group>";
@@ -272,12 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797D35C3254898F800A8CB13 /* ApplePayView.swift in Sources */,
+				79CF34F72547C4CD00ACC13C /* EndView.swift in Sources */,
+				79CF34F12547A83700ACC13C /* RideView.swift in Sources */,
 				79CD13DC252BC6B30025C70A /* PayView.swift in Sources */,
 				79CD13DA252BBF1C0025C70A /* MapViewer.swift in Sources */,
 				79CD13D6252BB0180025C70A /* SafetyInstructions.swift in Sources */,
 				79CD13C2252BAEB90025C70A /* ContentView.swift in Sources */,
 				79CD13D2252BAF270025C70A /* MapView.swift in Sources */,
 				79CD13C0252BAEB90025C70A /* ZoomBikesAppClipApp.swift in Sources */,
+				79CF34F52547B8D500ACC13C /* SummaryView.swift in Sources */,
+				79CF34F32547B41F00ACC13C /* StopWatchManager.swift in Sources */,
 				79CD13D8252BB6DA0025C70A /* LaunchingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,8 +437,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomBikes/ZoomBikes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ZoomBikes/Preview Content\"";
+				DEVELOPMENT_TEAM = 9986CG32TM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ZoomBikes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -437,6 +461,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomBikes/ZoomBikes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ZoomBikes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
