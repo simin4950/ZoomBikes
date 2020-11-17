@@ -17,6 +17,7 @@ class StopWatchManager:ObservableObject {
     @Published var mode: stopWatchMode = .stopped
     @Published var secondsElapsed = 0.0
     @Published var cost = 0.0
+    @Published var distance = 0.0
     
     var timer = Timer()
     
@@ -25,6 +26,7 @@ class StopWatchManager:ObservableObject {
         self.mode = .running
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.secondsElapsed = self.secondsElapsed + 1.0
+            self.distance = self.distance + 0.0044
         }
     }
     

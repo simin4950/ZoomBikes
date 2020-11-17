@@ -11,8 +11,19 @@ import MapKit
 struct RideView: View {
     @ObservedObject var stopWatchManager = StopWatchManager()
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+        var btnBack : some View { Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+            }) {
+                HStack {
+                Image("back")
+                    .aspectRatio(contentMode: .fit)
+                }
+            }
+        }
+    
     var body: some View {
-        // NavigationView{
             ZStack{
                 MapView(coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), name: "nothing")
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
@@ -21,7 +32,7 @@ struct RideView: View {
                     Spacer()
                     VStack{
                         HStack{
-                            Text("")
+                            btnBack
                             Text("Ride")
                                 .font(.largeTitle)
                                 .foregroundColor(Color("pink"))
@@ -85,7 +96,7 @@ struct RideView: View {
                                 .cornerRadius(50)
                             }
                             
-                            link(label: "End", destination: SummaryView(stopWatchManager: self.stopWatchManager))
+                            link(label: "END", destination: SummaryView(stopWatchManager: self.stopWatchManager))
                         }
                     }
                     
@@ -96,16 +107,16 @@ struct RideView: View {
                     .offset(y: 50)
                 }
             }
+            .navigationBarHidden(true)
         }
-    //} nav view
+    
     private func link<Destination: View>(label: String, destination: Destination) -> some View {
             return NavigationLink(destination: destination) {
                 
                 ZStack {
                     HStack{
-                            Text("End")
+                            Text(label)
                                 .font(.title)
-                                .font(.largeTitle)
                                 .foregroundColor(.white)
                     }.onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
                         self.stopWatchManager.stop()
@@ -118,8 +129,8 @@ struct RideView: View {
                     HStack{
                         Text(label)
                             .font(.title)
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
+                            .bold()
+                            .foregroundColor(Color("pink"))
                     }
                     .padding()
                     .padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)

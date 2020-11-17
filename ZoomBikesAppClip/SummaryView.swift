@@ -9,8 +9,6 @@ import SwiftUI
 
 struct SummaryView: View {
     @ObservedObject var stopWatchManager = StopWatchManager()
-    var distance = 0.0
-    var totalTime = 0.0
 
     var body: some View {
         ZStack {
@@ -25,7 +23,7 @@ struct SummaryView: View {
                     Text("Total Distance: ")
                         .font(.title)
                         .foregroundColor(Color("pink"))
-                    Text(String(format: "%.2f", distance) + " mi")
+                    Text(String(format: "%.2f", self.stopWatchManager.distance) + " mi")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .foregroundColor(Color.white)
                 }
@@ -62,6 +60,7 @@ struct SummaryView: View {
                 
             }
         }
+        .navigationBarHidden(true)
     }
     
     private func link<Destination: View>(label: String, destination: Destination) -> some View {

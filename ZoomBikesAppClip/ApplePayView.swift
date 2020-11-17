@@ -18,6 +18,7 @@ struct ApplePayView: View {
                 .edgesIgnoringSafeArea(.all)
             link(destination: RideView())
     }
+        .navigationBarHidden(true)
 }
     
     private func link<Destination: View>(destination: Destination) -> some View {

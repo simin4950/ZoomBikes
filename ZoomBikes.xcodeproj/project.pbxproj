@@ -22,7 +22,6 @@
 		79CD13CC252BAEBB0025C70A /* ZoomBikesAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 79CD13BD252BAEB90025C70A /* ZoomBikesAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		79CD13D2252BAF270025C70A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D1252BAF270025C70A /* MapView.swift */; };
 		79CD13D6252BB0180025C70A /* SafetyInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D5252BB0180025C70A /* SafetyInstructions.swift */; };
-		79CD13D8252BB6DA0025C70A /* LaunchingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */; };
 		79CD13DA252BBF1C0025C70A /* MapViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13D9252BBF1C0025C70A /* MapViewer.swift */; };
 		79CD13DC252BC6B30025C70A /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD13DB252BC6B30025C70A /* PayView.swift */; };
 		79CF34F12547A83700ACC13C /* RideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF34F02547A83700ACC13C /* RideView.swift */; };
@@ -75,7 +74,6 @@
 		79CD13C9252BAEBB0025C70A /* ZoomBikesAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomBikesAppClip.entitlements; sourceTree = "<group>"; };
 		79CD13D1252BAF270025C70A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		79CD13D5252BB0180025C70A /* SafetyInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyInstructions.swift; sourceTree = "<group>"; };
-		79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingPage.swift; sourceTree = "<group>"; };
 		79CD13D9252BBF1C0025C70A /* MapViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewer.swift; sourceTree = "<group>"; };
 		79CD13DB252BC6B30025C70A /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
 		79CF34EF25474D0F00ACC13C /* ZoomBikes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomBikes.entitlements; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				79CD13C9252BAEBB0025C70A /* ZoomBikesAppClip.entitlements */,
 				79CD13C5252BAEBB0025C70A /* Preview Content */,
 				79CD13D1252BAF270025C70A /* MapView.swift */,
-				79CD13D7252BB6DA0025C70A /* LaunchingPage.swift */,
 				79CD13D5252BB0180025C70A /* SafetyInstructions.swift */,
 				79CD13D9252BBF1C0025C70A /* MapViewer.swift */,
 				79CD13DB252BC6B30025C70A /* PayView.swift */,
@@ -300,7 +297,6 @@
 				79CD13C0252BAEB90025C70A /* ZoomBikesAppClipApp.swift in Sources */,
 				79CF34F52547B8D500ACC13C /* SummaryView.swift in Sources */,
 				79CF34F32547B41F00ACC13C /* StopWatchManager.swift in Sources */,
-				79CD13D8252BB6DA0025C70A /* LaunchingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

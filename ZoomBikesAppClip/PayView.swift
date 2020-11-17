@@ -9,17 +9,41 @@ import SwiftUI
 import MapKit
 
 struct PayView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+        var btnBack : some View { Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+            }) {
+                HStack {
+                Image("back")
+                    .aspectRatio(contentMode: .fit)
+                }
+            }
+        }
+    
     var body: some View {
-        // NavigationView{
             ZStack{
                 MapView(coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), name: "nothing")
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
                 VStack{
+                    HStack{
+                       Image("app-icon")
+                        Text("Don't have Apple Pay? Donwload our app to enter card information.")
+                            .foregroundColor(.white)
+                        Image("exit")
+                    }
+                    .padding(.vertical, 20)
+                    .padding(.horizontal, 30)
+                    .background(Color.gray)
+                    .cornerRadius(25)
+                    Spacer()
+                }
+                VStack{
                     Spacer()
                     VStack{
                         HStack{
-                            Text("")
+                            btnBack
                             Text("Payment")
                                 .font(.largeTitle)
                                 .foregroundColor(Color("pink"))
@@ -57,7 +81,7 @@ struct PayView: View {
                             }
                             
                         }
-                    link(label: " Pay", destination: ApplePayView())
+                    link(label: " PAY", destination: ApplePayView())
                     }
                     
                     .padding(.vertical, 50)
@@ -67,14 +91,13 @@ struct PayView: View {
                     .offset(y: 50)
                 }
             }
+            .navigationBarHidden(true)
         }
-    //} nav view
     private func link<Destination: View>(label: String, destination: Destination) -> some View {
             return NavigationLink(destination: destination) {
                 HStack{
                     Image("apple")
-                    Text(" Pay")
-                        .font(.title)
+                    Text(label)
                         .font(.largeTitle)
                         .foregroundColor(.white)
                 }

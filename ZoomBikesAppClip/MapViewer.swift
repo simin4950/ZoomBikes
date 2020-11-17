@@ -9,6 +9,17 @@ import SwiftUI
 import MapKit
 
 struct MapViewer: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+        var btnBack : some View { Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+            }) {
+                HStack {
+                Image("back")
+                    .aspectRatio(contentMode: .fit)
+                }
+            }
+        }
     var body: some View {
             ZStack{
                 MapView(coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), name: "nothing")
@@ -17,9 +28,12 @@ struct MapViewer: View {
                 VStack{
                     Spacer()
                     VStack{
-                        Text("Bike Details")
-                            .font(.largeTitle)
-                            .foregroundColor(Color("pink"))
+                        HStack{
+                            btnBack
+                            Text("Bike Details")
+                                .font(.largeTitle)
+                                .foregroundColor(Color("pink"))
+                        }
                         HStack{
                             VStack{
                                 HStack{
@@ -61,7 +75,8 @@ struct MapViewer: View {
                     .cornerRadius(50)
                     .offset(y: 50)
                 }
-            } //body
+            }
+            .navigationBarHidden(true)
         }
     
     private func link<Destination: View>(label: String, destination: Destination) -> some View {
