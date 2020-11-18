@@ -29,7 +29,7 @@ struct PayView: View {
                 VStack{
                     HStack{
                        Image("app-icon")
-                        Text("Don't have Apple Pay? Donwload our app to enter card information.")
+                        Text("Don't have Apple Pay? Download our app to enter card information.")
                             .foregroundColor(.white)
                         Image("exit")
                     }
