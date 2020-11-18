@@ -26,7 +26,7 @@ struct ApplePayView: View {
                 Image("apple-pay")
                     .resizable()
                     .scaledToFit()
-                    .offset(y: 100)
+                    .offset(y: 280)
             }
     }
 }
